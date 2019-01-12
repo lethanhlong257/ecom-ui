@@ -1,0 +1,25 @@
+{
+  "name": "ecom-ui",
+  "homepage": "/",
+  "authors": [
+    "Long Le"
+  ],
+  "description": "A Badass Material-UI Kit based on Material Design",
+  "main": "dist/index.js",
+  "keywords": [
+    "material",
+    "design",
+    "material-ui",
+    "google",
+    "twitter"
+  ],
+  "license": "None",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": true
+}
