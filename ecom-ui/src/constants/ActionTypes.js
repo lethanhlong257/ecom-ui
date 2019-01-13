@@ -1,0 +1,4 @@
+const HANDLE_DEMO = "HANDLE_DEMO";
+const HANDLE_DEMO_2 = "HANDLE_DEMO_2";
+
+export { HANDLE_DEMO, HANDLE_DEMO_2 };
