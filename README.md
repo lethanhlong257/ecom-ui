@@ -2,6 +2,7 @@
 Project use:
 Marterial UI develped by Google: https://material-ui.com/
 Create-tim free React KIT: https://www.creative-tim.com/product/material-kit-react
+<<<<<<< .mine
 
 # Reference UI: 
 https://demos.creative-tim.com/material-kit-pro/examples/ecommerce.html
