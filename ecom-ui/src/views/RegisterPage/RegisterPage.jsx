@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from 'react';
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 import InputAdornment from "@material-ui/core/InputAdornment";
@@ -7,6 +7,7 @@ import Icon from "@material-ui/core/Icon";
 // @material-ui/icons
 import Email from "@material-ui/icons/Email";
 import People from "@material-ui/icons/People";
+
 
 // core components
 import Header from "components/Header/Header.jsx";
@@ -25,7 +26,7 @@ import loginPageStyle from "assets/jss/material-kit-react/views/loginPage.jsx";
 
 import image from "assets/img/contact-bg-01.jpg";
 
-class LoginPage extends React.Component {
+class RegisterPage extends React.Component {
   constructor(props) {
     super(props);
     // we use this to make the card to appear after the page has been rendered
@@ -44,8 +45,6 @@ class LoginPage extends React.Component {
   }
   render() {
     const { classes, ...rest } = this.props;
-    console.log(classes);
-
     return (
       <div>
         <Header
@@ -68,8 +67,8 @@ class LoginPage extends React.Component {
               <GridItem xs={12} sm={12} md={4}>
                 <Card className={classes[this.state.cardAnimaton]}>
                   <form className={classes.form}>
-                    <CardHeaderForm title={'Login'} />
-                    <p className={classes.divider}><b>Please login before payment</b></p>
+                    <CardHeaderForm title={'Register'} />
+                    <p className={classes.divider}><b>Please full fill the information</b></p>
                     <CardBody>
                       <CustomInput
                         labelText="First Name..."
@@ -86,6 +85,7 @@ class LoginPage extends React.Component {
                           )
                         }}
                       />
+
                       <CustomInput
                         labelText="Email..."
                         id="email"
@@ -101,6 +101,7 @@ class LoginPage extends React.Component {
                           )
                         }}
                       />
+
                       <CustomInput
                         labelText="Password"
                         id="pass"
@@ -118,13 +119,14 @@ class LoginPage extends React.Component {
                           )
                         }}
                       />
+
                     </CardBody>
                     <CardFooter className={classes.cardFooter}>
                       <Button color="primary" size="lg">
-                        Get started
+                        Register
                       </Button>
                       <Button color="primary" size="lg">
-                        Register
+                        Cancel
                       </Button>
                     </CardFooter>
                   </form>
@@ -138,4 +140,4 @@ class LoginPage extends React.Component {
   }
 }
 
-export default withStyles(loginPageStyle)(LoginPage);
+export default withStyles(loginPageStyle)(RegisterPage);

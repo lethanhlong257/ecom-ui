@@ -9,11 +9,13 @@ import ErrorPage from "views/ErrorPage/ErrorPage.jsx";
 import ProductPage from "views/ProductPage/ProductPage.jsx";
 import ShopingCart from "views/ShopingCart/ShopingCart.jsx";
 import SignupPage from "views/SignupPage/SignupPage.jsx";
+import RegisterPage from "../views/RegisterPage/RegisterPage";
 
 var indexRoutes = [
   { path: "/landing-page", name: "LandingPage", component: LandingPage },
   { path: "/profile-page", name: "ProfilePage", component: ProfilePage },
   { path: "/login-page", name: "LoginPage", component: LoginPage },
+  { path: "/register-page", name: "RegisterPage", component: RegisterPage },
   { path: "/about-us", name: "AboutUs", component: AboutUs },
   { path: "/blog-posts", name: "BlogPost", component: BlogPosts },
   { path: "/contact-us", name: "ContactUs", component: ContactUs },
