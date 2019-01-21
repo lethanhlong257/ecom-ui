@@ -1,28 +1,15 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import SectionHeaderEcom from "../Components/Sections/SectionHeaderEcom.jsx";
+import SectionFooterEcom from "../Components/Sections/SectionFooterEcom.jsx";
 //import * as homePageAction from "../../actions/HomePage/HomePageAction.js";
 
 class HomePage extends Component {
   render() {
     return (
       <div>
-        <div className="jumbotron jumbotron-fluid">
-          <div className="container">
-            <h1 className="display-3">Home Page</h1>
-            <p className="lead">Jumbo helper text</p>
-            <hr className="my-2" />
-            <p>More info</p>
-            <p className="lead">
-              <a
-                className="btn btn-primary btn-lg"
-                href="Jumbo action link"
-                role="button"
-              >
-                Jumbo action name
-              </a>
-            </p>
-          </div>
-        </div>
+        <SectionHeaderEcom />
+        {/* <SectionFooterEcom /> */}
       </div>
     );
   }

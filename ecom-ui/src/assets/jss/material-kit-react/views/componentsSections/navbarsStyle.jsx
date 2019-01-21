@@ -51,6 +51,9 @@ const navbarsStyle = theme => ({
     top: "4px",
     borderRadius: "50%",
     marginLeft: "5px"
+  },
+  cart_icon_wrap: {
+    fontSize: "30px"
   }
 });
 
