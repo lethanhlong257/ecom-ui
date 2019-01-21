@@ -14,18 +14,6 @@ class SectionHeaderEcom extends React.Component {
         <HeaderTopNavEcom />
         <HeaderMiddleNavEcom />
         <HeaderMenu />
-
-        <a
-          id="back-to-top"
-          href="#"
-          className="btn btn-primary btn-lg back-to-top"
-          role="button"
-          title="Click to return on the top page"
-          data-toggle="tooltip"
-          data-placement="left"
-        >
-          <span className="glyphicon glyphicon-chevron-up" />
-        </a>
       </div>
     );
   }

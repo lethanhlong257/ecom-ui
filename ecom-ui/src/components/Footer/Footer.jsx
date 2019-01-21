@@ -9,7 +9,7 @@ import { List, ListItem, withStyles } from "@material-ui/core";
 // @material-ui/icons
 import Favorite from "@material-ui/icons/Favorite";
 
-import footerStyle from "assets/jss/material-kit-react/components/footerStyle.jsx";
+import footerCustomStyle from "assets/jss/material-kit-react/components/footerCustomStyle.jsx";
 
 function Footer({ ...props }) {
   const { classes, whiteFont } = props;
@@ -24,20 +24,21 @@ function Footer({ ...props }) {
   return (
     <footer className={footerClasses}>
       <div className={classes.container}>
+        <hr/>
         <div className={classes.left}>
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
               <a
-                href="https://www.ecom-ui.com/"
+                href="/"
                 className={classes.block}
                 target="_blank"
               >
-                Creative Tim
+                Home Page
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
               <a
-                href="https://www.ecom-ui.com/presentation"
+                href="/about-us"
                 className={classes.block}
                 target="_blank"
               >
@@ -46,7 +47,7 @@ function Footer({ ...props }) {
             </ListItem>
             <ListItem className={classes.inlineBlock}>
               <a
-                href="http://blog.ecom-ui.com/"
+                href="/blog-posts"
                 className={classes.block}
                 target="_blank"
               >
@@ -55,11 +56,11 @@ function Footer({ ...props }) {
             </ListItem>
             <ListItem className={classes.inlineBlock}>
               <a
-                href="https://www.ecom-ui.com/license"
+                href="/contact-us"
                 className={classes.block}
                 target="_blank"
               >
-                Licenses
+                Liên Hệ
               </a>
             </ListItem>
           </List>
@@ -68,11 +69,11 @@ function Footer({ ...props }) {
           &copy; {1900 + new Date().getYear()} , made with{" "}
           <Favorite className={classes.icon} /> by{" "}
           <a
-            href="https://www.ecom-ui.com"
+            href="/"
             className={aClasses}
             target="_blank"
           >
-            Creative Tim
+            React+Python team
           </a>{" "}
           for a better web.
         </div>
@@ -86,4 +87,4 @@ Footer.propTypes = {
   whiteFont: PropTypes.bool
 };
 
-export default withStyles(footerStyle)(Footer);
+export default withStyles(footerCustomStyle)(Footer);

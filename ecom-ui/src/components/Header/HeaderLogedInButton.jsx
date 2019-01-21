@@ -9,10 +9,6 @@ import { connect } from "react-redux";
 
 
 class HeaderLogedInButton extends React.Component {
-  constructor(props) {
-    super(props);
-
-  }
   render() {
     const { classes } = this.props;
     return (

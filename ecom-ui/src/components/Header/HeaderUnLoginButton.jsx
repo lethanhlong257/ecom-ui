@@ -6,12 +6,9 @@ import Button from "components/CustomButtons/Button.jsx";
 import PropTypes from "prop-types";
 import AccountCircle from "@material-ui/icons/AccountCircle";
 import Slide from "@material-ui/core/Slide";
-import IconButton from "@material-ui/core/IconButton";
 import Dialog from "@material-ui/core/Dialog";
-import DialogTitle from "@material-ui/core/DialogTitle";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogActions from "@material-ui/core/DialogActions";
-import Close from "@material-ui/icons/Close";
 import javascriptStyles from "assets/jss/material-kit-react/views/componentsSections/javascriptStyles.jsx";
 import HeaderLoginTabs from './HeaderLoginTabs.jsx';
 

@@ -9,7 +9,7 @@ class HomePage extends Component {
     return (
       <div>
         <SectionHeaderEcom />
-        {/* <SectionFooterEcom /> */}
+        <SectionFooterEcom />
       </div>
     );
   }

@@ -1,6 +1,4 @@
 import React from "react";
-
-// @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 import headerEcomStyle from "assets/jss/material-kit-react/views/componentsSections/headerEcomStyle.jsx";
 import List from "@material-ui/core/List";
@@ -8,6 +6,7 @@ import ListItem from "@material-ui/core/ListItem";
 import Header from "components/Header/Header.jsx";
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.jsx";
 import Button from "components/CustomButtons/Button.jsx";
+import PropTypes from "prop-types";
 
 class HeaderMenu extends React.Component {
   render() {
@@ -75,7 +74,6 @@ class HeaderMenu extends React.Component {
               <ListItem className={classes.listItem}>
                 <CustomDropdown
                   buttonText="Dropdown"
-                  dropdownHeader="Dropdown Header"
                   buttonProps={{
                     className: classes.navLink,
                     color: "transparent"
@@ -98,5 +96,9 @@ class HeaderMenu extends React.Component {
     );
   }
 }
+
+HeaderMenu.propTypes = {
+  classes: PropTypes.object.isRequired
+};
 
 export default withStyles(headerEcomStyle)(HeaderMenu);
