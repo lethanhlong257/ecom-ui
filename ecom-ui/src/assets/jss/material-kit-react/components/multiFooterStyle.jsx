@@ -3,7 +3,20 @@ import { lightBlackColor } from "assets/jss/material-kit-react.jsx";
 
 const multiFooterStyle = {
   ...footerCustomStyle,
-  color: "#ffffff",
-  background: lightBlackColor
+  topFooter: {
+    background: lightBlackColor,
+    color: "white",
+    padding: "15px 0px",
+    marginTop: "15px"
+  },
+  footerLink: {
+    color: "white"
+  },
+  imgFooter: {
+    width: "50%"
+  },
+  logoFooter: {
+    padding: "15px"
+  }
 };
 export default multiFooterStyle;

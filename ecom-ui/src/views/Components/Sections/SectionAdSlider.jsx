@@ -19,6 +19,7 @@ class SectionAdSlider extends React.Component {
             <SectionCarouselEcomCustom
               caroseulData={sliderData()}
               isEnableCaptionSlider={siteConfigs.isEnableCaptionSlider}
+              bannerData={bannerData()}
             />
           </GridItem>
           <GridItem xs={12} sm={12} md={4} className={classes.marginAuto}>
@@ -27,7 +28,7 @@ class SectionAdSlider extends React.Component {
                 <img
                   src={bannerData()[0].srcImg}
                   alt={bannerData()[0].altImg}
-                  className="slick-image img-fluid"
+                  className={classes.fillSlot + " slick-image img-fluid"}
                 />
               </GridItem>
               <GridItem xs={12} sm={12} md={12} className={classes.marginAuto}>

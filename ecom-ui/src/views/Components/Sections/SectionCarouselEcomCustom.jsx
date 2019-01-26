@@ -17,6 +17,7 @@ class SectionCarouselEcomCustom extends React.Component {
     });
   }
   render() {
+    const { classes } = this.props;
     const settings = {
       dots: true,
       infinite: true,
@@ -45,6 +46,40 @@ class SectionCarouselEcomCustom extends React.Component {
             </a>
           );
         })}
+        <a
+          className={classes.bannerToSlider}
+          href={this.props.bannerData[0].link}
+        >
+          <img
+            src={this.props.bannerData[0].srcImg}
+            alt={this.props.bannerData[0].altImg}
+            className="slick-image"
+          />
+          {this.props.isEnableCaptionSlider ? (
+            <div className="slick-caption">
+              <h4>{this.props.bannerData[0].caption}</h4>
+            </div>
+          ) : (
+            false
+          )}
+        </a>
+        <a
+          className={classes.bannerToSlider}
+          href={this.props.bannerData[1].link}
+        >
+          <img
+            src={this.props.bannerData[1].srcImg}
+            alt={this.props.bannerData[1].altImg}
+            className="slick-image"
+          />
+          {this.props.isEnableCaptionSlider ? (
+            <div className="slick-caption">
+              <h4>{this.props.bannerData[1].caption}</h4>
+            </div>
+          ) : (
+            false
+          )}
+        </a>
       </Carousel>
     );
   }
