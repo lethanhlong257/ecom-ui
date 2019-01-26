@@ -1,0 +1,37 @@
+[
+  {
+    "title": "slider 1",
+    "srcImg": "./img/bg.jpg",
+    "altImg": "slider 1",
+    "link": "/",
+    "caption": "Yellowstone National Park, United States"
+  },
+  {
+    "title": "slider 2",
+    "srcImg": "./img/bg2.jpg",
+    "altImg": "slider 2",
+    "link": "/",
+    "caption": "Somewhere Beyond, United States"
+  },
+  {
+    "title": "slider 3",
+    "srcImg": "./img/bg3.jpg",
+    "altImg": "slider 3",
+    "link": "/",
+    "caption": "Yellowstone National Park, United States"
+  },
+  {
+    "title": "banner1",
+    "srcImg": "./img/bg3.jpg",
+    "altImg": "slider 4",
+    "link": "/",
+    "caption": "Yellowstone National Park, United States"
+  },
+  {
+    "title": "banner 2",
+    "srcImg": "./img/bg2.jpg",
+    "altImg": "slider 5",
+    "link": "/",
+    "caption": "Yellowstone National Park, United States"
+  }
+]
