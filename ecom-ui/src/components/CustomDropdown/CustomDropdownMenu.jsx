@@ -153,6 +153,17 @@ class CustomDropdown extends React.Component {
                           />
                         );
                       }
+                      if (prop.multiLevel) {
+                        return (
+                          <MenuItem
+                            key={key}
+                            onClick={this.handleClose}
+                            className={dropdownItem}
+                          >
+                            {prop.data}
+                          </MenuItem>
+                        );
+                      }
                       return (
                         <MenuItem
                           key={key}

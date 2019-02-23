@@ -4,7 +4,7 @@ import headerEcomStyle from "assets/jss/material-kit-react/views/componentsSecti
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import Header from "components/Header/Header.jsx";
-import CustomDropdown from "components/CustomDropdown/CustomDropdown.jsx";
+import CustomDropdown from "components/CustomDropdown/CustomDropdownMenu.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 import PropTypes from "prop-types";
 
@@ -84,8 +84,7 @@ class HeaderMenu extends React.Component {
                     "Something else here",
                     { divider: true },
                     "Separated link",
-                    { divider: true },
-                    "One more separated link"
+                    { divider: true }
                   ]}
                 />
               </ListItem>
