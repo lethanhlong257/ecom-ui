@@ -88,7 +88,7 @@ class HeaderMenu extends React.Component {
             <div className="row">
               <nav className="navbar navbar-light navbar-expand-lg mainmenu">
                 <button
-                  className="navbar-toggler ml-auto"
+                  className="navbar-toggler ml-auto btn-menu-navbar-toggler"
                   type="button"
                   data-toggle="collapse"
                   data-target="#navbarSupportedContent"
@@ -106,9 +106,7 @@ class HeaderMenu extends React.Component {
                 >
                   <ul className="navbar-nav">
                     <li className="active">
-                      <a href="#">
-                        Home <span className="sr-only">(current)</span>
-                      </a>
+                      <a href="#">Home</a>
                     </li>
                     <li>
                       <a href="#">Link</a>
