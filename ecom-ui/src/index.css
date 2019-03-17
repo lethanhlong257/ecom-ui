@@ -46,10 +46,13 @@ body {
   margin: 10px;
   border: none
 }
+<<<<<<< HEAD
 
 .menu-area {
   margin-bottom: 15px;
 }
+=======
+>>>>>>> ca5acb733235c79311d71b2a0e7d204e2f74b8c8
 .menu-area{background: #f36}
 .dropdown-menu{padding:0;margin:0;border:0 solid transition!important;border:0 solid rgba(0,0,0,.15);border-radius:0;-webkit-box-shadow:none!important;box-shadow:none!important}
 .mainmenu a, .navbar-default .navbar-nav > li > a, .mainmenu ul li a , .navbar-expand-lg .navbar-nav .nav-link{color:#fff;font-size:16px;text-transform:capitalize;padding:16px 15px;display: block !important;}

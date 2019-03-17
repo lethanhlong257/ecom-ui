@@ -31,6 +31,7 @@ class HeaderMenu extends React.Component {
     const menuItemsLevel2ParentCodes = getMenuItemsLevel2ParentCodes();
     const menuItemsLevel3ParentCodes = [];
     return (
+<<<<<<< HEAD
       <div id="menu_area" className="menu-area">
         <div className="container">
           <div className="row">
@@ -58,6 +59,122 @@ class HeaderMenu extends React.Component {
                       return (
                         <li key={index}>
                           <a href={item.link}>{item.name}</a>
+=======
+      <div>
+        <Header
+          brand="Category"
+          className={classes.menuEcomCustom}
+          color="primary"
+          leftLinks={
+            <List className={classes.list}>
+              <ListItem className={classes.listItem}>
+                <Button
+                  href="#pablo"
+                  className={classes.navLink}
+                  onClick={e => e.preventDefault()}
+                  color="transparent"
+                >
+                  item.name
+                </Button>
+                <Button
+                  href="#pablo"
+                  className={classes.navLink}
+                  onClick={e => e.preventDefault()}
+                  color="transparent"
+                >
+                  item.name
+                </Button>
+                <Button
+                  href="#pablo"
+                  className={classes.navLink}
+                  onClick={e => e.preventDefault()}
+                  color="transparent"
+                >
+                  item.name
+                </Button>
+                <Button
+                  href="#pablo"
+                  className={classes.navLink}
+                  onClick={e => e.preventDefault()}
+                  color="transparent"
+                >
+                  item.name
+                </Button>
+              </ListItem>
+              <ListItem className={classes.listItem}>
+                <CustomDropdown
+                  buttonText="Dropdown"
+                  buttonProps={{
+                    className: classes.navLink,
+                    color: "transparent"
+                  }}
+                  dropdownList={[
+                    "Action",
+                    "Another action",
+                    "Something else here",
+                    { divider: true },
+                    "Separated link",
+                    { divider: true }
+                  ]}
+                />
+              </ListItem>
+            </List>
+          }
+        />
+
+        <div id="menu_area" className="menu-area">
+          <div className="container">
+            <div className="row">
+              <nav className="navbar navbar-light navbar-expand-lg mainmenu">
+                <button
+                  className="navbar-toggler ml-auto btn-menu-navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span className="navbar-toggler-icon-custom">
+                    <i className="navbar-toggler-icon-bars fas fa-bars" />
+                  </span>
+                </button>
+                <div
+                  className="collapse navbar-collapse justify-content-center"
+                  id="navbarSupportedContent"
+                >
+                  <ul className="navbar-nav">
+                    <li className="active">
+                      <a href="#">Home</a>
+                    </li>
+                    <li>
+                      <a href="#">Link</a>
+                    </li>
+                    <li className="dropdown">
+                      <a
+                        className="dropdown-toggle"
+                        href="#"
+                        id="navbarDropdown"
+                        role="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        Dropdown
+                      </a>
+                      <ul
+                        className="dropdown-menu"
+                        aria-labelledby="navbarDropdown"
+                      >
+                        <li>
+                          <a href="#">Action</a>
+                        </li>
+                        <li>
+                          <a href="#">Another action</a>
+                        </li>
+                        <li>
+                          <a href="#">Something else here</a>
+>>>>>>> ca5acb733235c79311d71b2a0e7d204e2f74b8c8
                         </li>
                       );
                     } else {
